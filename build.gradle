@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.6.+'
+    }
+}
+
+apply plugin: 'android'
+
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "18.1"
+}
+
+dependencies {
+    compile files('libs/android-ibeacon-service-1.0.jar')
+    compile 'com.android.support:support-v4:18.0.0'
+
+}
+
